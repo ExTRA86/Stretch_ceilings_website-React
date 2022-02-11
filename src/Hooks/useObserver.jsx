@@ -4,17 +4,22 @@ export const useObserver = options => {
   const sticky = useRef(null);
   const [navbar, setNavbar] = useState('nav');
 
-  const callbackFunction = entries => {
-    const [entry] = entries;
-    entry.isIntersecting ? setNavbar('nav') : setNavbar('stickytop');
-  };
-
   useEffect(() => {
+    const callbackFunction = entries => {
+      const [entry] = entries;
+      entry.isIntersecting ? setNavbar('nav') : setNavbar('stickytop');
+    };
+
+    let observerRefValue = null;
+
     const observer = new IntersectionObserver(callbackFunction, options);
-    if (sticky.current) observer.observe(sticky.current);
+    if (sticky.current) {
+      observer.observe(sticky.current);
+      observerRefValue = sticky.current;
+    }
 
     return () => {
-      if (sticky.current) observer.unobserve(sticky.current);
+      if (observerRefValue) observer.unobserve(observerRefValue);
     };
   }, [sticky, options]);
 
