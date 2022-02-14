@@ -427,7 +427,7 @@ const Main = ({ setVisible, setShow }) => {
                 src='/assets/images/logo.jpg'
                 alt='logo'
               />
-              <span>г. Москва, Красная площадь, с лева</span>
+              <span>г. Москва, Тихая улица</span>
               <div>
                 <img src='/assets/images/phone-icon.png' alt='img' />
                 <a href='tel:+77777777777'>+7 (777) 777 77 77</a>
