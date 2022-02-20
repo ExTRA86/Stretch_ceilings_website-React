@@ -1592,7 +1592,9 @@ footer a img {
   }
 
   .nav {
+    position: absolute;
     background-color: transparent;
+    z-index: 300;
   }
 
   .stickytop {
