@@ -16,7 +16,7 @@ function App() {
   const [show, setShow] = useState(false);
 
   return (
-    <React.Fragment>
+    <div className='app'>
       <MyModal visible={modal1} setVisible={setModal1}>
         <CallForm setShow={setShow} setVisible={setModal1} />
       </MyModal>
@@ -42,7 +42,7 @@ function App() {
           <img src='/assets/images/chevron-up.png' alt='icon' />
         </p>
       </LinkButton>
-    </React.Fragment>
+    </div>
   );
 }
 
