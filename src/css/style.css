@@ -152,6 +152,14 @@ header .header .contacts button:hover {
   cursor: pointer;
 }
 
+.menu-button {
+  display: none;
+}
+
+.mobile_menu {
+  display: none;
+}
+
 .stickytop {
   background: #3f4955;
   padding: 6px 0;
@@ -867,12 +875,12 @@ main .ask .ask-blocks .item div.active {
   display: block;
   opacity: 0; /*Элемент полностью прозрачный (невидимый)*/
   transition: 0.5s; /*Скорость перехода состояния элемента*/
-  animation: div 0.7s 1; /* Указываем название анимации, её время и количество повторов*/
+  animation: appearance 0.7s 1; /* Указываем название анимации, её время и количество повторов*/
   animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
   animation-delay: 0s; /* Задержка перед началом */
 }
 
-@keyframes div {
+@keyframes appearance {
   0% {
     opacity: 0;
   }
@@ -1524,12 +1532,12 @@ footer a img {
 
   .up {
     right: 20px;
-    bottom: 20px;
+    bottom: 65px;
   }
 
   .down {
     right: 20px;
-    bottom: 200px;
+    bottom: 5px;
   }
 
   footer .copy {
@@ -1581,6 +1589,58 @@ footer a img {
     position: static;
     width: 100%;
     border: none;
+  }
+
+  .nav {
+    background-color: transparent;
+  }
+
+  .stickytop {
+    background: transparent;
+  }
+
+  .menu-button {
+    display: block;
+    background-color: #3f4955;
+    margin-left: 5px;
+    padding: 0px 10px;
+    border-radius: 30%;
+    opacity: 0.8;
+  }
+
+  .menu-button:active {
+    opacity: 1;
+  }
+
+  .mobile_menu {
+    background-color: #3f4955;
+    color: #fff;
+    width: 100%;
+    padding: 5px 5px;
+    margin-left: 10px;
+    display: none;
+  }
+
+  .mobile_menu.active {
+    width: 100%;
+    z-index: 100;
+    display: block;
+    border-radius: 5px;
+    opacity: 0.8;
+    height: 0;
+    transition: 0.2s; /*Скорость перехода состояния элемента*/
+    animation: disclosure 0.2s 1; /* Указываем название анимации, её время и количество повторов*/
+    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+    animation-delay: 0s; /* Задержка перед началом */
+  }
+
+  @keyframes disclosure {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 90%;
+    }
   }
 
   nav a {

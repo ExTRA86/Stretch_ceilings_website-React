@@ -8,7 +8,7 @@ const MyAsk = ({ h, d }) => {
   };
 
   return (
-    <div className='item' onClick={() => activate()}>
+    <div className='item' onClick={activate}>
       <h4 className={classNameH4}>{h}</h4>
       <div className={classNameH4}>{d}</div>
     </div>

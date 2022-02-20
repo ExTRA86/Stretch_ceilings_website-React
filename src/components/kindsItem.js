@@ -11,7 +11,7 @@ const KindsItem = ({ className, srcImg, price, kindsName, setVisible }) => {
         <div>
           <span>
             <img src='/assets/images/chech1.png' alt='img' />
-            Бесплатный cервис
+            Бесплатный сервис
           </span>
           <span>
             <img src='/assets/images/chech1.png' alt='img' />С установкой

@@ -2,14 +2,13 @@
 
 Реализовано: модальные окна, липкая navbar, scroll до нужного места, scroll в начало и конец сайта, раскрывающиеся блоки с вопросами и плавно появляющимися ответами, яндекс карта
 
-Сайт не полностью адаптированный под мобильную версию. Будет реализовано в дальнейших обновлениях.
+Сайт адаптированный под мобильную версию.
 
 Stretch ceiling landing page (React)
 
 Implemented: modal windows, sticky navbar, scroll to the right place, scroll to the beginning and end of the site, drop-down blocks with questions and smoothly appearing answers, Yandex map
 
-The site is not fully mobile friendly. Will be implemented in future updates.
-
+Website adapted for mobile version.
 
 ## Available Scripts
 
