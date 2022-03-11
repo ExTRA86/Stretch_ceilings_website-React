@@ -1083,19 +1083,19 @@ main .call button:hover {
   position: absolute;
   width: 427px;
   height: 211px;
-  z-index: 100;
   top: 100px;
   bottom: 0;
-  left: 15px;
+  left: 30px;
   right: 0;
   display: block;
-  padding: 25px 0;
+  padding: 20px 0;
   text-align: center;
   z-index: 400;
 }
 
 .places .places-logo {
   display: block;
+  height: 40%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1104,7 +1104,7 @@ main .call button:hover {
   display: block;
   font-size: 22px;
   color: #1c1d1e;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .places div {
@@ -1298,9 +1298,6 @@ footer a img {
     justify-content: space-evenly;
   }
 
-  /*-webkit-box-pack: space-evenly;*/
-  /*-webkit-justify-content: space-evenly;*/
-  /*-ms-flex-pack: space-evenly;*/
   main .kinds .grid .item3 {
     margin-top: 50px;
   }
@@ -1442,6 +1439,36 @@ footer a img {
 
   footer a.link-mail {
     font-size: 14px;
+  }
+
+  .places {
+    width: 250px;
+    height: 130px;
+    top: 280px;
+    left: 20px;
+    padding: 5px 0;
+  }
+
+  .places .places-logo {
+    height: 30%;
+  }
+
+  .places span {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  .places div {
+    margin-top: 10px;
+  }
+
+  .places div img {
+    height: 35px;
+    margin-right: 15px;
+  }
+
+  .places div a {
+    font-size: 18px;
   }
 }
 
@@ -1589,10 +1616,8 @@ footer a img {
     padding: 0;
   }
 
-  main #map .places {
-    position: static;
-    width: 100%;
-    border: none;
+  .places {
+    display: none;
   }
 
   .nav {
@@ -1913,14 +1938,6 @@ footer a img {
   main .call h3 {
     font-size: 16px;
     line-height: 22px;
-  }
-
-  main #map .places span {
-    font-size: 18px;
-  }
-
-  main #map .places div a {
-    font-size: 24px;
   }
 }
 

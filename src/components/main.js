@@ -423,7 +423,6 @@ const Main = ({ setVisible, setShow }) => {
             <div className='places'>
               <img
                 className='places-logo'
-                style={{ height: 60 }}
                 src='/assets/images/logo.jpg'
                 alt='logo'
               />
